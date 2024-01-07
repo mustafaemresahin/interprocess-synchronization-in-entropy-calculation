@@ -112,9 +112,16 @@ void *entropy(void *arg) {
 }
 
 int main() {
-  
+  std::string line;
+  int length = 0;
 
-  
+  // Initialize mutexes and condition variable
+  pthread_mutex_t first_mutex;
+  pthread_mutex_init(&first_mutex, nullptr);
+  pthread_mutex_t second_mutex;
+  pthread_mutex_init(&second_mutex, nullptr);
+  pthread_cond_t turn_cond = PTHREAD_COND_INITIALIZER;
+  static int counter = 0;
 
   
 
