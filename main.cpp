@@ -102,7 +102,11 @@ void *entropy(void *arg) {
     }
     std::cout << std::endl << std::endl;
 
-    
+    // Signal this thread's completion and wake up other threads
+    pthread_mutex_lock(data->second_mutex);
+    (*data->counter)++;
+    pthread_cond_broadcast(data->turn_cond);
+    pthread_mutex_unlock(data->second_mutex);
 
     
 }
