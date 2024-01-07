@@ -50,6 +50,9 @@ void *entropy(void *arg) {
     std::string localInput = data->input[data->id];
     int localID = data->id;
 
+    // Unlock the first mutex signaling this thread is ready
+    pthread_mutex_unlock(data->first_mutex);
+
     
     
 
