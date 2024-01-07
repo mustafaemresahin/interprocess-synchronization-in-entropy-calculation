@@ -36,3 +36,19 @@ g++ -pthread -o entropyCalculator main.cpp
 ```bash
 ./entropyCalculator
 ```
+
+Input the scheduling information when prompted or redirect from a file.
+
+## Input Format
+The program expects input in the following format, each line representing a CPU's scheduling information:
+
+```bash
+[Task] [Execution Time] [Task] [Execution Time] ...
+```
+
+Example:
+
+```bash
+A 2 B 4 C 3 A 7
+B 3 A 3 C 3 A 1 B 1 C 1
+```
