@@ -24,3 +24,9 @@ git clone https://github.com/mustafaemresahin/interprocess-synchronization-in-en
 ```bash
 cd interprocess-synchronization-in-entropy-calculation
 ```
+
+3. Compile the program using g++ with thread support:
+
+```bash
+g++ -pthread -o entropyCalculator main.cpp
+```
