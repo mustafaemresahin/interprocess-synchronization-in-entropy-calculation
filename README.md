@@ -30,3 +30,9 @@ cd interprocess-synchronization-in-entropy-calculation
 ```bash
 g++ -pthread -o entropyCalculator main.cpp
 ```
+
+4. Run the program and input the scheduling information:
+
+```bash
+./entropyCalculator
+```
