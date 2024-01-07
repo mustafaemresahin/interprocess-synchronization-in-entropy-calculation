@@ -79,7 +79,13 @@ void *entropy(void *arg) {
     }
     pthread_mutex_unlock(data->second_mutex);
 
-    
+    // Output results for this thread
+    std::cout << "CPU " << localID + 1 << std::endl;
+    std::cout << "Task scheduling information: ";
+    std::istringstream iss2(localInput);
+    char task;
+    int time;
+    bool first = true;
 
     
 
