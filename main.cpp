@@ -138,7 +138,7 @@ int main() {
     data.input.push_back(line);
     length++;
   }
-  
+  std::vector<pthread_t> tid(length);  // Vector to store thread IDs
   
   
 
