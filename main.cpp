@@ -147,7 +147,10 @@ int main() {
     pthread_create(&tid[i], NULL, entropy, &data);
   }
 
-  
+  // Wait for all threads to complete
+  for (int i = 0; i < length; i++) {
+    pthread_join(tid[i], NULL);
+  }
 
   return 0;
 }
