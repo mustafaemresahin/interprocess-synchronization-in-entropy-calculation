@@ -62,7 +62,15 @@ void *entropy(void *arg) {
     double currH = 0.0;
     int NFreq = 0;
 
-    
+    // Parse input and calculate entropy for each task
+    while (iss >> selectedTask >> extraFreq) {
+        if (freq.find(selectedTask) == freq.end()) {
+        freq[selectedTask] = 0;
+        }
+        double ent = calc_incremental_entropy(freq, currFreq, currH, selectedTask, extraFreq, NFreq);
+        freq[selectedTask] += extraFreq;
+        entropies.push_back(ent);
+    }
 
     
 
