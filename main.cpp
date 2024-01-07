@@ -123,7 +123,12 @@ int main() {
   pthread_cond_t turn_cond = PTHREAD_COND_INITIALIZER;
   static int counter = 0;
 
-  
+  // Initialize ThreadData struct
+  ThreadData data;
+  data.first_mutex = &first_mutex;
+  data.second_mutex = &second_mutex;
+  data.turn_cond = &turn_cond;
+  data.counter = &counter;
 
   
   
