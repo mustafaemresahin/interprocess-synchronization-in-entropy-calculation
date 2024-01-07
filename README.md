@@ -10,3 +10,5 @@ The goal of this assignment is to utilize interprocess synchronization mechanism
 - **Multithreading with Synchronization**: Implements POSIX threads with synchronization using mutexes and condition variables.
 - **STDIN Input Processing**: Reads scheduling information from STDIN, accommodating dynamic input scenarios.
 - **Synchronized Output**: Coordinates thread output to prevent race conditions and ensure orderly display of results.
+
+## How to Run
