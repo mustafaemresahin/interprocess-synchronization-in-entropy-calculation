@@ -108,6 +108,6 @@ void *entropy(void *arg) {
     pthread_cond_broadcast(data->turn_cond);
     pthread_mutex_unlock(data->second_mutex);
 
-    
+    return NULL;
 }
 
