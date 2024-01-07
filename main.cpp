@@ -41,4 +41,8 @@ double calc_incremental_entropy(std::map<char, int> &freq, int &currFreq, double
   return H;
 };
 
+// Thread function to calculate entropy
+void *entropy(void *arg) {
+  
+}
 
