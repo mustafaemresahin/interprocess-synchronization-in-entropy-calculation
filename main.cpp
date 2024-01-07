@@ -87,7 +87,13 @@ void *entropy(void *arg) {
     int time;
     bool first = true;
 
-    
+    // Display task scheduling information
+    while (iss2 >> task >> time) {
+        if (!first)
+        std::cout << ", ";
+        std::cout << task << "(" << time << ")";
+        first = false;
+    }
 
     
 
