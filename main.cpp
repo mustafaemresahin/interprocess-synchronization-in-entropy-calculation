@@ -130,7 +130,14 @@ int main() {
   data.turn_cond = &turn_cond;
   data.counter = &counter;
 
-  
+  // Read input lines for task scheduling
+  while (std::getline(std::cin, line)) {
+    if (line.empty()) {
+      break;
+    }
+    data.input.push_back(line);
+    length++;
+  }
   
   
   
