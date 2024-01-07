@@ -44,6 +44,18 @@ double calc_incremental_entropy(std::map<char, int> &freq, int &currFreq, double
 // Thread function to calculate entropy
 void *entropy(void *arg) {
     std::vector<double> entropies;  // Vector to store calculated entropies
+    ThreadData *data = (ThreadData *)arg;  // Cast argument to ThreadData pointer
+
+    
+    
+    
+
+    
+
+    
+
+    
+
     
 }
 
