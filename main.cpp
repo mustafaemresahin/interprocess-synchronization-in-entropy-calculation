@@ -95,6 +95,13 @@ void *entropy(void *arg) {
         first = false;
     }
 
+    std::cout << std::endl << "Entropy for CPU " << localID + 1 << std::endl;
+    // Display calculated entropy values
+    for (double e : entropies) {
+        std::cout << std::fixed << std::setprecision(2) << e << ' ';
+    }
+    std::cout << std::endl << std::endl;
+
     
 
     
