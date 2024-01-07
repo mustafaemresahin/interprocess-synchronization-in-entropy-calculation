@@ -140,7 +140,12 @@ int main() {
   }
   std::vector<pthread_t> tid(length);  // Vector to store thread IDs
   
-  
+  // Create threads for entropy calculation
+  for (int i = 0; i < length; i++) {
+    pthread_mutex_lock(&first_mutex);
+    data.id = i;
+    pthread_create(&tid[i], NULL, entropy, &data);
+  }
 
   
 
