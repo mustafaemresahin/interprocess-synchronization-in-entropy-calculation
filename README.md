@@ -18,3 +18,9 @@ The goal of this assignment is to utilize interprocess synchronization mechanism
 ```bash
 git clone https://github.com/mustafaemresahin/interprocess-synchronization-in-entropy-calculation.git
 ```
+
+2. Navigate to the repository directory:
+
+```bash
+cd interprocess-synchronization-in-entropy-calculation
+```
