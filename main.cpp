@@ -72,6 +72,13 @@ void *entropy(void *arg) {
         entropies.push_back(ent);
     }
 
+    // Synchronize output by waiting for turn
+    pthread_mutex_lock(data->second_mutex);
+    while (*data->counter != localID) {
+        pthread_cond_wait(data->turn_cond, data->second_mutex);
+    }
+    pthread_mutex_unlock(data->second_mutex);
+
     
 
     
