@@ -46,7 +46,10 @@ void *entropy(void *arg) {
     std::vector<double> entropies;  // Vector to store calculated entropies
     ThreadData *data = (ThreadData *)arg;  // Cast argument to ThreadData pointer
 
-    
+    // Extract local input and ID for this thread
+    std::string localInput = data->input[data->id];
+    int localID = data->id;
+
     
     
 
