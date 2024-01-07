@@ -53,7 +53,15 @@ void *entropy(void *arg) {
     // Unlock the first mutex signaling this thread is ready
     pthread_mutex_unlock(data->first_mutex);
 
-    
+    // Stream to parse input string
+    std::istringstream iss(localInput);
+    char selectedTask;
+    int extraFreq;
+    std::map<char, int> freq;  // Map to store frequency of tasks
+    int currFreq = 0;
+    double currH = 0.0;
+    int NFreq = 0;
+
     
 
     
