@@ -12,3 +12,9 @@ The goal of this assignment is to utilize interprocess synchronization mechanism
 - **Synchronized Output**: Coordinates thread output to prevent race conditions and ensure orderly display of results.
 
 ## How to Run
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/mustafaemresahin/interprocess-synchronization-in-entropy-calculation.git
+```
